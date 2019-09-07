@@ -23,7 +23,7 @@ namespace ConsoleApp1
             //用reflection 的这个方法得到动态type（虚拟化对象） 的方法
             MethodInfo fireMI = v.GetMethod("Fire");
             MethodInfo runMI = v.GetMethod("Run");
-            //调用
+            //调用invoko
             fireMI.Invoke(o, null);
             runMI.Invoke(o, null);
         }
